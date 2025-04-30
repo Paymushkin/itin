@@ -1,0 +1,36 @@
+.table-tariff.table-tariff-2col {
+    table-layout: fixed;
+}
+
+.table-wrapper {
+    position: relative;
+}
+
+.table-tariff colgroup col:first-child {
+    background-color: transparent;
+}
+
+.table-tariff colgroup col:not(:first-child) {
+    width: 15%;
+} 
+
+.td {
+    position: relative;
+}
+
+.column-hover-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    box-shadow: 0px 0px 0px 0px rgba(14, 14, 14, 0);
+    z-index: 1;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.column-hover-container.active {
+    opacity: 1;
+    box-shadow: 0px 0px 30px 0px rgba(14, 14, 14, 0.2);
+}

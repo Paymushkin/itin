@@ -1,3 +1,4 @@
+
 jQuery(document).ready(function() {
 
   $('.modal-open').modal('show');
@@ -64,7 +65,6 @@ jQuery(document).ready(function() {
       })
 
     }
-  
 
     $('.banner-slider-nav').slick({
       slidesToScroll: 1,
@@ -123,7 +123,6 @@ jQuery(document).ready(function() {
       ],
     });
   });
-  
 
 
   $.each($('.slider-case'), function() {
@@ -132,104 +131,8 @@ jQuery(document).ready(function() {
       fade: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      dots: true,
+      dots: false,
       asNavFor: '.slider-case-nav',
-      arrows: true,
-      prevArrow: '<a href="#" class="prev-button prev-button-case"></a>',
-      nextArrow: '<a href="#" class="next-button next-button-case"></a>',
-      appendArrows: $(this).parents('.slider__wrap').find('.container-arrows'),
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            arrows: false,
-          },
-        },
-      ],
-
-
-    });
-  });
-  $.each($('.slider-case2'), function() {
-    $(this).slick({
-      infinity: true,
-      fade: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      asNavFor: '.slider-case-nav2',
-      arrows: true,
-      prevArrow: '<a href="#" class="prev-button prev-button-case"></a>',
-      nextArrow: '<a href="#" class="next-button next-button-case"></a>',
-      appendArrows: $(this).parents('.slider__wrap').find('.container-arrows'),
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            arrows: false,
-          },
-        },
-      ],
-
-
-    });
-  });
-  $.each($('.slider-case3'), function() {
-    $(this).slick({
-      infinity: true,
-      fade: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      asNavFor: '.slider-case-nav2',
-      arrows: true,
-      prevArrow: '<a href="#" class="prev-button prev-button-case"></a>',
-      nextArrow: '<a href="#" class="next-button next-button-case"></a>',
-      appendArrows: $(this).parents('.slider__wrap').find('.container-arrows'),
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            arrows: false,
-          },
-        },
-      ],
-
-
-    });
-  });
-  $.each($('.slider-case4'), function() {
-    $(this).slick({
-      infinity: true,
-      fade: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      asNavFor: '.slider-case-nav2',
-      arrows: true,
-      prevArrow: '<a href="#" class="prev-button prev-button-case"></a>',
-      nextArrow: '<a href="#" class="next-button next-button-case"></a>',
-      appendArrows: $(this).parents('.slider__wrap').find('.container-arrows'),
-      responsive: [
-        {
-          breakpoint: 991,
-          settings: {
-            arrows: false,
-          },
-        },
-      ],
-
-
-    });
-  });
-  $.each($('.slider-case5'), function() {
-    $(this).slick({
-      infinity: true,
-      fade: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      asNavFor: '.slider-case-nav2',
       arrows: true,
       prevArrow: '<a href="#" class="prev-button prev-button-case"></a>',
       nextArrow: '<a href="#" class="next-button next-button-case"></a>',
@@ -252,74 +155,6 @@ jQuery(document).ready(function() {
     slidesToScroll: 1,
     slidesToShow: 7,
     asNavFor: '.slider-case',
-    infinite: false,
-    focusOnSelect: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          arrows: false,
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
-  $('.slider-case-nav2').slick({
-    slidesToScroll: 1,
-    slidesToShow: 7,
-    asNavFor: '.slider-case2',
-    infinite: false,
-    focusOnSelect: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          arrows: false,
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
-  $('.slider-case-nav3').slick({
-    slidesToScroll: 1,
-    slidesToShow: 7,
-    asNavFor: '.slider-case3',
-    infinite: false,
-    focusOnSelect: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          arrows: false,
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
-  $('.slider-case-nav4').slick({
-    slidesToScroll: 1,
-    slidesToShow: 7,
-    asNavFor: '.slider-case4',
-    infinite: false,
-    focusOnSelect: true,
-    arrows: false,
-    responsive: [
-      {
-        breakpoint: 991,
-        settings: {
-          arrows: false,
-          slidesToShow: 2,
-        },
-      },
-    ],
-  });
-  $('.slider-case-nav5').slick({
-    slidesToScroll: 1,
-    slidesToShow: 7,
-    asNavFor: '.slider-case5',
     infinite: false,
     focusOnSelect: true,
     arrows: false,
@@ -424,7 +259,7 @@ jQuery(document).ready(function() {
   $.each($('.slider-events'), function() {
     $(this).slick({
       infinity: true,
-      slidesToShow: 1,
+      slidesToShow: 4,
       slidesToScroll: 1,
       dots: false,
       arrow: true,
@@ -447,20 +282,22 @@ jQuery(document).ready(function() {
     });
   });
 
+
   $('.readmore').readmore({
     speed: 700,
     maxHeight: 160,
-    moreLink: '<a href="#" class="show-more">Показать все</a>',
-    lessLink: '<a href="#" class="show-more">Скрыть</a>',
+    moreLink: '<a href="#" class="show-more">РџРѕРєР°Р·Р°С‚СЊ РІСЃРµ</a>',
+    lessLink: '<a href="#" class="show-more">РЎРєСЂС‹С‚СЊ</a>',
+	startOpen: true
   });
 
   $('.readmore-safety').readmore({
     speed: 700,
     maxHeight: 80,
-    moreLink: '<a href="#" class="show-more">Показать все</a>',
-    lessLink: '<a href="#" class="show-more">Скрыть</a>',
+    moreLink: '<a href="#" class="show-more">РџРѕРєР°Р·Р°С‚СЊ РІСЃРµ</a>',
+    lessLink: '<a href="#" class="show-more">РЎРєСЂС‹С‚СЊ</a>',
+	startOpen: true
   });
-
 
 
   /// formstyler
@@ -476,26 +313,15 @@ jQuery(document).ready(function() {
   });
 
 
-  $('.tabs-item--js comparison-item').on('click', function() {
-    var itemThumbs = $(this).attr('data-thumb'),
-      imgThumbs = $('.tabs__block--js[data-thumb= \'' + itemThumbs + '\']');
-    $(this).addClass('active comparison').siblings().removeClass('active comparison');
-    imgThumbs.addClass('active comparison').siblings().removeClass('active comparison');
-  });
   $('.tabs-item--js').on('click', function() {
     var itemThumbs = $(this).attr('data-thumb'),
       imgThumbs = $('.tabs__block--js[data-thumb= \'' + itemThumbs + '\']');
     $(this).addClass('active').siblings().removeClass('active');
     imgThumbs.addClass('active').siblings().removeClass('active');
-    imgThumbs.find('.slider-case').slick('refresh'); 
-    imgThumbs.find('.slider-case2').slick('refresh');
-    imgThumbs.find('.slider-case3').slick('refresh');
-    imgThumbs.find('.slider-case4').slick('refresh');
-    imgThumbs.find('.slider-case5').slick('refresh');
   });
-  
+
   $('.item-active-multi-js').on('click', function() {
-    $(this).toggleClass('active');
+    //$(this).toggleClass('active');
   });
 
 
@@ -548,7 +374,7 @@ jQuery(document).ready(function() {
 
 
   $('.input-file').inputfile({
-    uploadText: '<span class="glyphicon glyphicon-upload"></span> <span class="attach-text">Прикрепить файл</span>',
+    uploadText: '<span class="glyphicon glyphicon-upload"></span> <span class="attach-text">РџСЂРёРєСЂРµРїРёС‚СЊ С„Р°Р№Р»</span>',
     removeText: '<span class="glyphicon glyphicon-trash"></span>',
     restoreText: '<span class="glyphicon glyphicon-remove"></span>',
 
@@ -605,7 +431,7 @@ jQuery(document).ready(function() {
         fixedContentPos: true,
         closeOnBgClick: true,
         alignTop: false,
-        tLoading: 'Загружается картинка #%curr%...',
+        tLoading: 'Р—Р°РіСЂСѓР¶Р°РµС‚СЃСЏ РєР°СЂС‚РёРЅРєР° #%curr%...',
         gallery: {
           enabled: true,
           tCounter: '<span class="mfp-counter">%curr%/%total%</span>',
@@ -625,19 +451,23 @@ jQuery(document).ready(function() {
 
   /// mask
   $(function() {
-    $('.phone').mask('+7 (999) 999 - 99 - 99');
+    $('.phone').mask('+7 (999) 999-99-99');
   });
 
   $('.quest-block').tooltip({
     html: true,
     title: '<div class="tooltip-block">\n' +
-      '                        <div class="tooltip-block-text">На одной копии «1С-Битрикс: Управление сайтом» можно создать несколько поддерживаемых сайтов. Поддержка для дополнительных сайтов может быть приобретена со значительными скидками.</div>',
+      '                        <div class="tooltip-block-text">РќР° РѕРґРЅРѕР№ РєРѕРїРёРё В«1РЎ-Р‘РёС‚СЂРёРєСЃ: РЈРїСЂР°РІР»РµРЅРёРµ СЃР°Р№С‚РѕРјВ» РјРѕР¶РЅРѕ СЃРѕР·РґР°С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РїРѕРґРґРµСЂР¶РёРІР°РµРјС‹С… СЃР°Р№С‚РѕРІ. РџРѕРґРґРµСЂР¶РєР° РґР»СЏ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹С… СЃР°Р№С‚РѕРІ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСЂРёРѕР±СЂРµС‚РµРЅР° СЃРѕ Р·РЅР°С‡РёС‚РµР»СЊРЅС‹РјРё СЃРєРёРґРєР°РјРё.</div>',
     placement: 'bottom',
     trigger: 'hover',
     delay: {show: 100, hide: 100},
     animation: true,
   });
 
+
+  $('.humb').on('click', function() {
+    $('body').toggleClass('active');
+  });
 
   $('.input').on('focus', function() {
     $(this).parents('.subscribe-input__wrap').addClass('input-select');
@@ -678,7 +508,7 @@ jQuery(document).ready(function() {
 
   // bottomline
   //
-  var $window = $(window),
+  /*var $window = $(window),
     $target = $('.table-tariff'),
     $bottomline = $('.bottom-line');
   $footer = $('.footer');
@@ -693,10 +523,41 @@ jQuery(document).ready(function() {
       $bottomline.fadeIn('fast');
     }
     return;
-  });
+  });*/
+   var $w = $(window),$canvases = $('.table-tariff__wrap');
+   $w.scroll(function() {
 
+	var d = $w.height() / 2 + $w.scrollTop();
+
+    $canvases.each(function() {
+     var $this = $(this),
+
+       ptop = $this.offset().top,
+
+        total = ptop + $this.height();
+
+      $this.toggleClass('active-bottomline', ptop < d && total >= d);
+
+    });
+
+   });
+
+ 
+
+
+  //$("#drop").dropzone({ url: "/file/post" });
+
+  //$('#fileupload').fileupload();
+
+  /*$('.input-file').inputfile({
+    uploadText: '<span class="glyphicon glyphicon-upload"></span> РџСЂРёРєСЂРµРїРёС‚СЊ С„Р°Р№Р»',
+    removeText: '<span class="glyphicon glyphicon-trash"></span>',
+    restoreText: '<span class="glyphicon glyphicon-remove"></span>',
+
+    uploadButtonClass: 'input-file-button',
+    removeButtonClass: 'delete-file'
+  });*/
 
 });
-
 
 

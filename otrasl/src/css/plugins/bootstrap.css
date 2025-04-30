@@ -463,14 +463,12 @@ pre code {
   margin-left: auto; }
 
 @media (min-width: 576px) {
-  /* .container {
-    max-width: 540px; } */
-    }
+  .container {
+    max-width: 540px; } }
 
 @media (min-width: 768px) {
   .container {
-    /* max-width: 720px;  */
-  padding: 0 39px;} }
+    max-width: 720px; } }
 
 @media (min-width: 992px) {
   .container {
@@ -478,7 +476,7 @@ pre code {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1610px; } }
+    max-width: 1140px; } }
 
 .container-fluid {
   width: 100%;
@@ -1594,8 +1592,7 @@ pre code {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch; }
   .table-responsive-md > .table-bordered {
-    border: 0; } 
-}
+    border: 0; } }
 
 @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -1656,7 +1653,6 @@ pre code {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #80bdff;
   outline: 0;
   -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
           box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
@@ -2092,9 +2088,7 @@ textarea.form-control {
     -webkit-box-pack: center;
             justify-content: center; }
   .form-inline .custom-control-label {
-    margin-bottom: 0; } 
-  
-  }
+    margin-bottom: 0; } }
 
 .btn {
   display: inline-block;
@@ -3840,21 +3834,6 @@ input[type="button"].btn-block {
     flex-basis: auto; }
   .navbar-expand-md .navbar-toggler {
     display: none; } }
-    @media (max-width: 991px) {
-      .d-img-none{
-        display: none !important;
-      }
-    }
-    @media (max-width: 575px) {
-      .d-img-lg-none{
-        display: none !important;
-      }
-    }
-    @media (max-width: 240px) {
-      .d-img-sm-none{
-        display: none !important;
-      }
-    }
 
 @media (max-width: 991.98px) {
   .navbar-expand-lg > .container,
@@ -6037,8 +6016,7 @@ button.bg-dark:focus {
   .d-lg-inline-flex {
     display: -ms-inline-flexbox !important;
     display: -webkit-inline-box !important;
-    display: inline-flex !important; } 
-  }
+    display: inline-flex !important; } }
 
 @media (min-width: 1200px) {
   .d-xl-none {
