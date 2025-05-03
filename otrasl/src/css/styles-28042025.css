@@ -34,3 +34,8 @@
     opacity: 1;
     box-shadow: 0px 0px 30px 0px rgba(14, 14, 14, 0.2);
 }
+
+.page-banner-img-wrap img{
+    object-fit: contain;
+    object-position: right center;
+}

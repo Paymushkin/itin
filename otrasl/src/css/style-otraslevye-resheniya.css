@@ -5739,8 +5739,8 @@ html {
   width: 100%;
 }
 .table-tariff .td:first-child {
-  /* width: 100%; */
-  max-width: 534px;
+  width: 100%;
+  /* max-width: 534px; */
 }
 .td .tariff-type {
   font-size: 16px;
