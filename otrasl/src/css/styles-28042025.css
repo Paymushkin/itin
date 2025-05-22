@@ -10,9 +10,11 @@
     background-color: transparent;
 }
 
-.table-tariff colgroup col:not(:first-child) {
-    width: 15%;
-} 
+@media (min-width: 1440px) {
+  .table-tariff colgroup col:not(:first-child) {
+    width: 372px;
+  }
+}
 
 .td {
     position: relative;
